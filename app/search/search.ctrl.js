@@ -10,6 +10,7 @@
                     .then(
                         function (response) {
                             $scope.cities = response.list;
+                            console.log($scope.cities);
                         },
                         function (err) {
                             console.log("error finding cities: ", err);
